@@ -151,6 +151,15 @@ textarea {
 	appearance: none;
 }
 
+._anim-items {
+	transition: all 1.6s ease;
+	opacity: 0;
+
+	&._active {
+		opacity: 1;
+	}
+}
+
 .center {
 	text-align: center;
 }
@@ -185,6 +194,20 @@ textarea {
 	}
 }
 
+.p-wrap {
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	@media (max-width: $md3+px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+.bg {
+	background: #f3f3f3;
+}
+
 // === title ========================================================================
 .title-1 {
 	font-weight: bold;
@@ -201,6 +224,16 @@ textarea {
 	}
 }
 .title-2 {
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 1.19em;
+
+	@media (max-width: $md3+px) {
+		font-size: 40px;
+	}
+	@media (max-width: $md4+px) {
+		font-size: 30px;
+	}
 }
 
 .title-3 {
@@ -214,12 +247,19 @@ textarea {
 .title-6 {
 }
 
+.title-color {
+	color: $titleColor;
+}
+
 .suptitle {
 }
 .subtitle {
 }
 
 .text {
+}
+.text-center {
+	text-align: center;
 }
 // === and title ========================================================================
 
@@ -241,6 +281,15 @@ textarea {
 	align-self: center;
 	position: relative;
 
+	@media (min-width: 992px) {
+		&:hover {
+			background-color: rgba($titleColor, 0.2);
+			& [class^="line"] {
+				background-color: $titleColor;
+			}
+		}
+	}
+
 	&.white {
 		color: $textColorLight;
 
@@ -252,12 +301,22 @@ textarea {
 				}
 			}
 		}
+
+		& [class^="line"] {
+			&:before, &:after {
+				background-color: #fff;
+			}
+		}
 	}
-	
+
 	& [class^="line"] {
 		position: absolute;
 		display: block;
-		transition: all .3s ease;
+		transition: all 0.3s ease;
+
+		&:before, &:after {
+			background-color: $titleColor;
+		}
 	}
 
 	& .line-1 {
@@ -265,26 +324,24 @@ textarea {
 		left: 0;
 		width: 100%;
 		height: 2px;
-		
+
 		&:before {
 			position: absolute;
-			content: '';
+			content: "";
 			top: 0;
 			left: 0;
 			height: 100%;
 			width: calc(80% - 10px);
-			background-color: #fff;
 			animation: top-1 4s linear infinite;
 		}
 
 		&:after {
 			position: absolute;
-			content: '';
+			content: "";
 			top: 0;
 			right: 0;
 			height: 100%;
 			width: calc(20% - 10px);
-			background-color: #fff;
 			animation: top-2 4s linear infinite;
 		}
 	}
@@ -297,23 +354,21 @@ textarea {
 
 		&:before {
 			position: absolute;
-			content: '';
+			content: "";
 			bottom: 0;
 			right: 0;
 			height: calc(80% - 10px);
 			width: 100%;
-			background-color: #fff;
 			animation: right-1 4s linear infinite 2s;
 		}
 
 		&:after {
 			position: absolute;
-			content: '';
+			content: "";
 			right: 0;
 			top: 0;
 			height: calc(80% - 10px);
 			width: 100%;
-			background-color: #fff;
 			animation: right-2 4s linear infinite 2s;
 		}
 	}
@@ -325,23 +380,21 @@ textarea {
 
 		&:before {
 			position: absolute;
-			content: '';
+			content: "";
 			top: 0;
 			left: 0;
 			height: 100%;
 			width: calc(80% - 10px);
-			background-color: #fff;
 			animation: bottom-1 4s linear infinite;
 		}
 
 		&:after {
 			position: absolute;
-			content: '';
+			content: "";
 			top: 0;
 			right: 0;
 			height: 100%;
 			width: calc(20% - 10px);
-			background-color: #fff;
 			animation: bottom-2 4s linear infinite;
 		}
 	}
@@ -353,23 +406,21 @@ textarea {
 
 		&:before {
 			position: absolute;
-			content: '';
+			content: "";
 			top: 0;
 			left: 0;
 			height: calc(80% - 10px);
 			width: 100%;
-			background-color: #fff;
 			animation: left-1 4s linear infinite 2s;
 		}
 
 		&:after {
 			position: absolute;
-			content: '';
+			content: "";
 			bottom: 0;
 			right: 0;
 			height: calc(80% - 10px);
 			width: 100%;
-			background-color: #fff;
 			animation: left-2 4s linear infinite 2s;
 		}
 	}
@@ -431,7 +482,6 @@ textarea {
 	100% {
 		height: calc(0% - 10px);
 	}
-
 }
 @keyframes left-2 {
 	0% {
@@ -455,7 +505,6 @@ textarea {
 	100% {
 		height: calc(0% - 10px);
 	}
-
 }
 @keyframes right-2 {
 	0% {
@@ -518,6 +567,10 @@ button.btn-default {
 @import "../common/footer/footer";
 @import "../common/checkbox/checkbox";
 @import "../common/promo-header/promo-header";
+@import "../common/projects/projects";
+@import "../common/news-block/news-block";
+@import "../common/partners/partners";
+@import "../common/gallery/gallery";
 // ==== BLOCKS =====================================================
 
 // ==== PAGES =====================================================

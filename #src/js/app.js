@@ -30,6 +30,9 @@ window.addEventListener('load', function () {
 	@@include('forms.js');
 	@@include('../common/header/header.js');
 	@@include('../common/promo-header/promo-header.js');
+	@@include('../common/partners/partners.js');
+	@@include('../common/gallery/gallery.js');
+	@@include('files/scrollAnimation.js');
 	//@@includ e('../common/popup/popup.js');
 
 });
@@ -67,9 +70,7 @@ window.addEventListener('DOMContentLoaded', function() {
 		})
 	}
 
+	@@include('../common/news-block/news-block.js');
+
 
 });
-
-//@@include('plagins/lazy-load.js');
-
-

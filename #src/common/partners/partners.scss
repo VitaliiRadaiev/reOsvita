@@ -1,0 +1,40 @@
+.partners {
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__body {
+        @media (min-width: 992px) {
+            margin-bottom: 20px;
+            & .swiper-wrapper {
+                flex-wrap: wrap;
+            }
+
+            & .swiper-slide {
+                flex: 0 1 20%;
+                margin-bottom: 26px;
+            }
+        }
+
+        & .swiper-wrapper {
+            transition-timing-function: linear !important;
+        }
+
+        & .swiper-slide {
+            width: 226px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            padding: 10px 20px;
+
+            & img {
+                max-width: 100%;
+                max-height: 100%;
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+}

@@ -1,7 +1,3 @@
-body {
-    height: 3000px;
-}
-
 .promo-header {
     background-color: $titleColor;
     position: relative;
@@ -13,6 +9,32 @@ body {
         width: 100%;
         height: 100%;
         z-index: 1;
+    }
+
+    &__bg-left {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 30%;
+
+        & img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            max-height: 100%;
+        }
+    }
+
+    &__bg-right {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+
+        & img {
+            height: 100%;
+            width: auto;
+        }
     }
 
     &__body {

@@ -1,0 +1,128 @@
+.news-block {
+    &__body {
+        background-color: #fff;
+        padding: 70px 60px 87px;
+
+        @media (max-width: $md2+px) {
+            padding: 40px;
+        }
+
+        @media (max-width: 575.98px) {
+            padding: 20px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        @media (max-width: $md3+px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list {
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &__list-col-1 {
+        flex: 0 0 47.16%;
+        margin-right: 80px;
+
+        @media (max-width: $md1+px) {
+            margin-right: 40px;
+        }
+
+        @media (max-width: $md3+px) {
+            margin-right: 0;
+        }
+
+        & .news-block__list-item {
+
+            @media (min-width: 768px) {
+                border: none;
+                padding-bottom: 0;    
+            }
+
+            @media (max-width: $md3+px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__list-col-2 {
+        flex: 1 1 auto;
+
+        & .news-card__img {
+            display: none;
+        }
+
+        & .news-card__title {
+            font-size: 18px;
+        }
+    }
+
+    &__list-item {
+        border-bottom: 1px solid #c3ced6;
+        padding-bottom: 15px;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.news-card {
+    display: block;
+
+    &__img {
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+    &__head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        & .label-card {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__date {
+        font-size: 14px;
+        line-height: 171%;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        color: $titleColor;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 1.20em;
+        transition: all .3s ease;
+
+        @media (min-width: 992px) {
+            &:hover {
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+.label-card {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 28px;
+    padding: 6px 15px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #a2a4a9;
+    border: 1px solid #d0d9e9;
+    border-radius: 10px;
+}
