@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{
+	"title": "New Project"
+	})
+	<body>
+		<div class="_preload-body"></div>
+		<!-- == TOP LINE ================== -->
+		@@include('common/header/_header.html',{
+			"white": '',
+		})
+		<!-- == // TOP LINE ================== -->
+
+		<main class="_page home-page"> 
+			<section class="promo-header">
+				<div class="promo-header__bg"></div>
+				<div class="promo-header__body container">
+					<h1 class="promo-header__title title-1">
+						Розвиваємо Україну через якісні освітні проєкти
+					</h1>
+					<div class="promo-header__subtitle">
+						Освіторія – це неприбуткова громадська спілка, яка допомагає змінювати і розвивати освіту в Україні. 
+					</div>
+					<a href="#" class="btn-default white">
+						Детальніше
+					</a>
+					<div class="promo-header__scroll-down">
+						<img class="img-svg" src="img/icons/scroll-icon.svg" alt="">
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- == FOOTER ================== -->
+		@@include('common/footer/_footer.html',{})
+		<!-- == // FOOTER ================== -->
+		@@include('_js-bottom.html',{})
+	</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title>New Project</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.is-load ._preload-body:before {
+			display: none;
+		}
+		
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+	<body>
+		<div class="_preload-body"></div>
+		<!-- == TOP LINE ================== -->
+		<header class="header ">
+    <div class="header__body container">
+        <div class="header__logo-wrap">
+            <div class="header__logo">
+                <a href="#">
+                    <img class="img-svg" src="img/logo/logo.svg" alt="logo">
+                </a>
+            </div>
+        </div>
+        <nav class="header__menu">
+            <ul class="nav">
+                <li>
+                    <a class="nav-link" href="#">
+                        Хто ми
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">
+                        Нашi проєкти
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">
+                        Новини
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">
+                        Зв’язатися з нами
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__language-wrap">
+            <div class="header__language active-lng-1"> <!-- active-lng-2 -->
+                <a href="#" class="header__language-item">Укр</a>
+                <div class="header__language-toggle"></div>
+                <a href="#" class="header__language-item">ENG</a>
+            </div>
+        </div>
+        <div class="header__burger">
+            <div class="burger-wrap">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+		<!-- == // TOP LINE ================== -->
+
+		<main class="_page home-page"> 
+			<section class="promo-header">
+				<div class="promo-header__bg"></div>
+				<div class="promo-header__body container">
+					<h1 class="promo-header__title title-1">
+						Розвиваємо Україну через якісні освітні проєкти
+					</h1>
+					<div class="promo-header__subtitle">
+						Освіторія – це неприбуткова громадська спілка, яка допомагає змінювати і розвивати освіту в Україні. 
+					</div>
+					<a href="#" class="btn-default white">
+						Детальніше
+					</a>
+					<div class="promo-header__scroll-down">
+						<img class="img-svg" src="img/icons/scroll-icon.svg" alt="">
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- == FOOTER ================== -->
+		
+		<!-- == // FOOTER ================== -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+	</body>
+</html>

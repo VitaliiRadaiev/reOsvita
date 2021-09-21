@@ -1,0 +1,64 @@
+body {
+    height: 3000px;
+}
+
+.promo-header {
+    background-color: $titleColor;
+    position: relative;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &__body {
+        position: relative;
+        z-index: 2;
+        min-height: 100vh;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        text-align: center;
+        color: $textColorLight;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+        max-width: 678px;
+        margin: 0 auto 15px;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        line-height: 144%;
+        max-width: 630px;
+        margin: 0 auto 30px;
+
+        @media (max-width: $md4+px) {
+            font-size: 16px;
+        }
+    }
+
+    &__scroll-down {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        & rect:nth-child(2) {
+            display: block;
+            animation: rectAnim 2s ease infinite;
+        }
+    }
+
+    @keyframes rectAnim {
+        0% {transform: translateY(0);}
+        50% {transform: translateY(-8px);}
+        100% {transform: translateY(0);}
+    }
+}
