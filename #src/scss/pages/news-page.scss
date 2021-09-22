@@ -1,0 +1,19 @@
+.news {
+
+    &__title {
+        margin-bottom: 40px;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list {
+
+        & > li {
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
