@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New Project</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.is-load ._preload-body:before {
+			display: none;
+		}
+		
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    <header class="header header_light">
+    <div class="header__body container">
+        <div class="header__logo-wrap">
+            <div class="header__logo">
+                <a href="#">
+                    <img class="img-svg" src="img/logo/logo.svg" alt="logo">
+                </a>
+            </div>
+        </div>
+        <nav class="header__menu">
+            <ul class="nav">
+                <li>
+                    <a class="nav-link" href="#">
+                        Хто ми
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">
+                        Нашi проєкти
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">
+                        Новини
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">
+                        Зв’язатися з нами
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__language-wrap">
+            <div class="header__language active-lng-1"> <!-- active-lng-2 -->
+                <a href="#" class="header__language-item">Укр</a>
+                <div class="header__language-toggle"></div>
+                <a href="#" class="header__language-item">ENG</a>
+            </div>
+        </div>
+        <div class="header__burger">
+            <div class="burger-wrap">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page project-detail-page _padding-top">
+        <div class="container">
+            <ul class="breadcrams">
+                <li>
+                    <a href="#">Головна</a>
+                </li>
+                <li>Професійний стандарт вчителя нового покоління</li>
+            </ul>
+        </div>
+
+        <section class="text-block">
+            <div class="container">
+                <div class="text-block__body text-content">
+                    <h1>
+                        Професійний стандарт <br> вчителя нового покоління
+                    </h1>
+                    <p>
+                        <big>
+                            Професійний стандарт вчителя — це документ, яким держава визначає загальні та професійні
+                            компетентності педагога, а також дає орієнтир для закладів освіти при підготовці освітян та
+                            підвищенні їхньої кваліфікації.
+                        </big>
+                    </p>
+                    <p>
+                        Текст професійного стандарту, запропонований «РЕ:Освітою» в результаті проєкту, був
+                        доопрацьований працівниками Міністерства освіти і науки та офіційно затверджений у грудні 2020
+                        року.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-detail-list _anim-items _anim-no-hid">
+            <div class="container">
+                <ul class="project-detail-list__body">
+                    <li>
+                        <div class="project-detail-card">
+                            <div class="project-detail-card__bg">
+                                <img src="img/icons/project-detail-card-decor-1.svg" alt="">
+                            </div>
+                            <div class="project-detail-card__body">
+                                <div class="project-detail-card__head">
+                                    <div class="project-detail-card__icon">
+                                        <img src="img/icons/project-detail-card-icon-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="project-detail-card__title">
+                                    Проєкт реалізовувався за підтримки Міжнародного фонду «Відродження»
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="project-detail-card">
+                            <div class="project-detail-card__bg">
+                                <img src="img/icons/project-detail-card-decor-2.svg" alt="">
+                            </div>
+                            <div class="project-detail-card__body">
+                                <div class="project-detail-card__head">
+                                    <div class="project-detail-card__icon">
+                                        <img src="img/icons/calendar.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="project-detail-card__title">
+                                    Термін реалізації: січень – грудень 2020
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="text-img-block p-wrap _anim-items _anim-no-hid">
+            <div class="container">
+                <div class="text-img-block__body">
+                    <div class="text-img-block__col-1">
+                        <div class="text-img-block__text-wrap">
+                            <div class="text-img-block__text-big">
+                                «Варіант проєкту професійного стандарту, пропонований нашою групою, був доопрацьований
+                                робочою групою і працівниками Міністерства освіти і науки. На цьому етапі стандарт
+                                зазнав певних змін. Запропонована нами структура залишилася, проте внесено зміни до
+                                частини формулювань, а найбільше правок зазнала частина щодо рівнів розвитку
+                                компетентностей за різними кваліфікаційними категоріями»
+                            </div>
+                            <div class="text-img-block__bottom">
+                                <p>
+                                    Лілія Гриневич
+                                </p>
+                                <p>
+                                    очільниця ГО «РЕ:Освіта».
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-img-block__col-2">
+                        <div class="text-img-block__img ibg">
+                            <img src="img/photo/text-img-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="percent-info-block p-wrap bg _anim-items _anim-no-hid">
+            <div class="container">
+                <div class="percent-info-block__head">
+                    Професійний стандарт вчителя розроблявся разом з педагогами-практиками та представниками академічної спільноти. Його основна перевага — він враховує кращий міжнародний досвід та  чітко формулює, яким має бути вчитель для успішної роботи в Новій українській школі. 
+                </div>
+                <ul class="percent-info-block__list">
+                    <li>
+                        <div class="percent-info-block__percent">
+                            62%
+                        </div>
+                        <div class="percent-info-block__text">
+                            Вчителів готові  використовувати пропонований професійний стандарт у своїй професійній діяльності*.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="percent-info-block__percent">
+                            81% 
+                        </div>
+                        <div class="percent-info-block__text">
+                            Вчителів зазначили, що професійний стандарт був зрозумілим для них
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="documents-block p-wrap">
+            <div class="container">
+                <h2 class="documents-block__title title-2 title-color">
+                    Документ описує 5 сфер діяльності (трудових функцій) учителя
+                </h2>
+                <ul class="documents-block__list">
+                    <li>
+                        <a href="#" class="documents-block-card _anim-items _anim-no-hid" style="background-color: #91AFAD;">
+                            <div class="documents-block-card__label">
+                                a
+                            </div>
+                            <div class="documents-block-card__text">
+                                Навчання учнів предметів (інтегрованих курсів), 
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="documents-block-card _anim-items _anim-no-hid" style="background-color: #B8CEDB;">
+                            <div class="documents-block-card__label">
+                                Б
+                            </div>
+                            <div class="documents-block-card__text">
+                                Партнерська взаємодія з учасниками освітнього процесу
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="documents-block-card _anim-items _anim-no-hid" style="background-color: #9DB8A6;">
+                            <div class="documents-block-card__label">
+                                В
+                            </div>
+                            <div class="documents-block-card__text">
+                                Організація здорового, безпечного, розвивального, інклюзивного освітнього середовища
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="documents-block-card _anim-items _anim-no-hid" style="background-color: #D3B2B0;">
+                            <div class="documents-block-card__label">
+                                Г
+                            </div>
+                            <div class="documents-block-card__text">
+                                Управління освітнім процесом
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="documents-block-card _anim-items _anim-no-hid" style="background-color: #9AA1B3;">
+                            <div class="documents-block-card__label">
+                                Д
+                            </div>
+                            <div class="documents-block-card__text">
+                                Безперервний професійний розвиток
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="documents-block__bottom">
+                    <p>
+                        Кожна з них охоплює по три професійні компетентності. Стандарт передбачає також п’ять наскрізних компетентностей, які вчитель має формувати у своїх учнів, а отже повинен володіти ними і сам. 
+                    </p>
+                    <a href="#" class="btn-default">
+                        Завантажити «Професійний стандарт вчителя»
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrap-container p-wrap bg">
+            <div class="container">
+                <div class="wrap-container__row _anim-items _anim-no-hid">
+                    <form action="#" class="cta-form">
+                        <h2 class="cta-form__title title-2 title-color">
+                            Форма для зв'язку
+                        </h2>
+                        <div class="cta-form__items">
+                            <div class="cta-form__item">
+                                <input type="text" class="input" placeholder="ім'я">
+                            </div>
+                            <div class="cta-form__item">
+                                <input type="text" class="input _mask" placeholder="Телефон">
+                            </div>
+                            <div class="cta-form__item">
+                                <input type="email" class="input" placeholder="Email">
+                            </div>
+                            <div class="cta-form__item full-width">
+                                <textarea class="textarea" placeholder="Повідомлення"></textarea>
+                            </div>
+                        </div>
+                        <div class="cta-form__bottom">
+                            <button class="btn-default" type="submit">
+                                Відправити
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="wrap-container__row">
+                    <section class="similar-posts">
+                        <div class="similar-posts__body">
+                            <h2 class="similar-posts__title title-2 title-color">
+                                Публікації за проєктом
+                            </h2>
+                            <ul class="similar-posts__list">
+                                <li>
+                                    <a href="#" class="news-card _anim-items _anim-no-hid">
+                                        <div class="news-card__img ibg">
+                                            <img src="img/photo/news-card-img-2.jpg" alt="">
+                                        </div>
+                                        <div class="news-card__head">
+                                            <div class="news-card__date">
+                                                11 Березня 2021
+                                            </div>
+                                            <div class="label-card">Анонси</div>
+                                        </div>
+                                        <div class="news-card__title">
+                                            Учителів не можна оцінювати за новим профстандартом, поки вони не отримають час і можливості для відповідної підготовки – інтерв’ю з Лілією Гриневич
+                                        </div>
+                                        <div class="news-card__arrow">
+                                            <img src="img/icons/arrow-right.svg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="news-card _anim-items _anim-no-hid">
+                                        <div class="news-card__img ibg">
+                                            <img src="img/photo/news-card-img-3.jpg" alt="">
+                                        </div>
+                                        <div class="news-card__head">
+                                            <div class="news-card__date">
+                                                11 Березня 2021
+                                            </div>
+                                            <div class="label-card">Анонси</div>
+                                        </div>
+                                        <div class="news-card__title">
+                                            Професійний стандарт вчителя – міжнародний досвід
+                                        </div>
+                                        <div class="news-card__arrow">
+                                            <img src="img/icons/arrow-right.svg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="news-card _anim-items _anim-no-hid">
+                                        <div class="news-card__img ibg">
+                                            <img src="img/photo/news-card-img-4.jpg" alt="">
+                                        </div>
+                                        <div class="news-card__head">
+                                            <div class="news-card__date">
+                                                11 Березня 2021
+                                            </div>
+                                            <div class="label-card">Анонси</div>
+                                        </div>
+                                        <div class="news-card__title">
+                                            Яким буде професійний стандарт вчителя. Інтерв’ю з розробницями
+                                        </div>
+                                        <div class="news-card__arrow">
+                                            <img src="img/icons/arrow-right.svg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="news-card _anim-items _anim-no-hid">
+                                        <div class="news-card__img ibg">
+                                            <img src="img/photo/news-card-img-5.jpg" alt="">
+                                        </div>
+                                        <div class="news-card__head">
+                                            <div class="news-card__date">
+                                                11 Березня 2021
+                                            </div>
+                                            <div class="label-card">Анонси</div>
+                                        </div>
+                                        <div class="news-card__title">
+                                            Професійний стандарт вчителя. Лілія Гриневич про його важливість і необхідність
+                                        </div>
+                                        <div class="news-card__arrow">
+                                            <img src="img/icons/arrow-right.svg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- == FOOTER ================== -->
+    <footer class="footer">
+    <div class="container">
+        <h2 class="footer__title title-2">
+            Якщо залишилися питання - зв'яжіться з нами
+        </h2>
+        <div class="footer__body">
+            <div class="footer__col">
+                <div class="footer__body-item">
+                    <div class="footer__label">Email</div>
+                    <div class="footer__text">
+                        <a href="mailto:team@pe:ocвita.ua">team@pe:ocвita.ua</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__body-item">
+                    <div class="footer__label">Телефон</div>
+                    <div class="footer__text">
+                        <a href="tel:380973492863">+38(097) 349 28 63</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__body-item">
+                    <div class="footer__label">Адреса</div>
+                    <div class="footer__text">
+                        Київ, вул. Дмитрівська 45, офіс 31
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>
+                Політика щодо обробки персональних даних
+            </p>
+            <p>
+                ©2021 РЕ:OCBITA
+            </p>
+        </div>
+    </div>
+</footer>
+    <!-- == // FOOTER ================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+
+</body>
+
+</html>

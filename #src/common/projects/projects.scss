@@ -56,6 +56,15 @@
             }
         }
     }
+
+    &__bottom {
+        text-align: center;
+        padding-top: 40px;
+
+        @media (max-width: $md3+px) {
+            padding-top: 20px;
+        }
+    }
 }
 
 .projects-card {
