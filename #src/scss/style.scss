@@ -203,7 +203,9 @@ textarea {
 		padding-bottom: 40px;
 	}
 }
-
+.pt-0 {
+	padding-top: 0 !important;
+}
 .bg {
 	background: #f3f3f3;
 }
@@ -647,6 +649,7 @@ button.btn-default {
 		font-size: 42px;
 		line-height: 1.19em;
 		margin-bottom: 0.5em;
+		color: $titleColor;
 
 		@media (max-width: $md3+px) {
 			font-size: 40px;
@@ -701,5 +704,6 @@ button.btn-default {
 
 @import "pages/home";
 @import "pages/projects";
+@import "pages/about";
 
 // ==== AND PAGES =====================================================

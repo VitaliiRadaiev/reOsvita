@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New Project</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.is-load ._preload-body:before {
+			display: none;
+		}
+		
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    <header class="header header_light">
+    <div class="header__body container">
+        <div class="header__logo-wrap">
+            <div class="header__logo">
+                <a href="#">
+                    <img class="img-svg" src="img/logo/logo.svg" alt="logo">
+                </a>
+            </div>
+        </div>
+        <nav class="header__menu">
+            <ul class="nav">
+                <li>
+                    <a class="nav-link" href="#">
+                        Хто ми
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">
+                        Нашi проєкти
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">
+                        Новини
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">
+                        Зв’язатися з нами
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__language-wrap">
+            <div class="header__language active-lng-1"> <!-- active-lng-2 -->
+                <a href="#" class="header__language-item">Укр</a>
+                <div class="header__language-toggle"></div>
+                <a href="#" class="header__language-item">ENG</a>
+            </div>
+        </div>
+        <div class="header__burger">
+            <div class="burger-wrap">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page about-page _padding-top">
+        <div class="container">
+            <ul class="breadcrams">
+                <li>
+                    <a href="#">Головна</a>
+                </li>
+                <li>Хто ми</li>
+            </ul>
+        </div>
+
+        <section class="text-img-block pt-0 p-wrap">
+            <div class="container">
+                <div class="text-img-block__body">
+                    <div class="text-img-block__col-1">
+                        <div class="text-img-block__text-wrap">
+                            <div class="text-content">
+                                <h1>
+                                    Хто ми
+                                </h1>
+                                <p>
+                                    <big>
+                                        <big>
+                                            ГО “РЕ:ОСВІТА” — громадська організація, що допомагає об’єднати думки та позиції громадського сектору, професійних спільнот, бізнесу й інших зацікавлених стейкхолдерів щодо трансформації системи освіти України.
+                                        </big>
+                                    </big>
+                                </p>
+                                <p>
+                                    <big>
+                                        Ми перетворюємо спільні напрацювання у документи, готові для просування у законодавчих та виконавчих органах влади. Оскільки напрацьовані рішення — результат консенсусу багатьох сторін, нашої спільної міці вистачить, аби перетворити плани у реальність.
+                                    </big>
+                                </p>
+                                <p>
+                                    Серцем RE:ОСВІТИ є дві міністерки: Лілія Гриневич (міністр освіти і науки України 2016-2019 років) та Анна Новосад (міністр освіти і науки України 2019-2020 років).
+                                </p>
+                                <p>
+                                    Їхній досвід, знання політичної системи та правил її роботи дають можливість перетворювати провідні освітні ідеї в чітко сформульовані пропозиції для впровадження в освітню політику держави.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-img-block__col-2">
+                        <div class="text-img-block__img ibg">
+                            <img src="img/photo/text-img-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner-box _anim-items _anim-no-hide">
+            <div class="banner-box__bg ibg">
+                <img src="img/photo/banner-box-bg.jpg" alt="">
+            </div>
+            <div class="banner-box__body container">
+                <h2 class="banner-box__title title-2">
+                    Наша місія
+                </h2>
+                <div class="banner-box__text">
+                    Об’єднувати небайдужих навколо якісних освітніх рішень для успіху українців.
+                </div>
+            </div>
+        </section>
+
+        <section class="team-block p-wrap bg">
+            <div class="container">
+                <h2 class="team-block__title title-2 title-color">
+                    Команда
+                </h2>
+                <ul class="team-block__list">
+                    <li>
+                        <div class="team-card _anim-items _anim-no-hide">
+                            <div class="team-card__img ibg">
+                                <img src="img/photo/team-card-img-1.jpg" alt="">
+                            </div>
+                            <div class="team-card__text-wrap">
+                                <div class="team-card__name">
+                                    Лілія Гриневич
+                                </div>
+                                <div class="team-card__text">
+                                    голова правління ГО «РЕ:ОСВІТА», міністр освіти і науки України (2016-2019 рр.)
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-card _anim-items _anim-no-hide">
+                            <div class="team-card__img ibg">
+                                <img src="img/photo/team-card-img-2.jpg" alt="">
+                            </div>
+                            <div class="team-card__text-wrap">
+                                <div class="team-card__name">
+                                    Анна Новосад
+                                </div>
+                                <div class="team-card__text">
+                                    виконавчий директор ГО «РЕ:ОСВІТА», міністр освіти і науки України (2019-2020 рр.)
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-card _anim-items _anim-no-hide">
+                            <div class="team-card__img ibg">
+                                <img src="img/photo/team-card-img-3.jpg" alt="">
+                            </div>
+                            <div class="team-card__text-wrap">
+                                <div class="team-card__name">
+                                    Анна Пуцова
+                                </div>
+                                <div class="team-card__text">
+                                    член правління  ГО «РЕ:ОСВІТА»
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-card _anim-items _anim-no-hide">
+                            <div class="team-card__img ibg">
+                                <img src="img/photo/team-card-img-1.jpg" alt="">
+                            </div>
+                            <div class="team-card__text-wrap">
+                                <div class="team-card__name">
+                                    Лілія Гриневич
+                                </div>
+                                <div class="team-card__text">
+                                    голова правління ГО «РЕ:ОСВІТА», міністр освіти і науки України (2016-2019 рр.)
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-card _anim-items _anim-no-hide">
+                            <div class="team-card__img ibg">
+                                <img src="img/photo/team-card-img-2.jpg" alt="">
+                            </div>
+                            <div class="team-card__text-wrap">
+                                <div class="team-card__name">
+                                    Анна Новосад
+                                </div>
+                                <div class="team-card__text">
+                                    виконавчий директор ГО «РЕ:ОСВІТА», міністр освіти і науки України (2019-2020 рр.)
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-card _anim-items _anim-no-hide">
+                            <div class="team-card__img ibg">
+                                <img src="img/photo/team-card-img-3.jpg" alt="">
+                            </div>
+                            <div class="team-card__text-wrap">
+                                <div class="team-card__name">
+                                    Анна Пуцова
+                                </div>
+                                <div class="team-card__text">
+                                    член правління  ГО «РЕ:ОСВІТА»
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="projects__bottom">
+                    <a href="#" class="btn-default">
+						більше
+					</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners p-wrap _anim-items _anim-no-hide">
+			<div class="container">
+				<h2 class="partners__title title-2 title-color">
+					Партнери
+				</h2>
+				<div class="partners__body swiper-container" data-mobile="false">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/photo/partner-logo-1.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/photo/partner-logo-2.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/photo/partner-logo-3.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/photo/partner-logo-4.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/photo/partner-logo-5.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/photo/partner-logo-6.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/photo/partner-logo-7.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/photo/partner-logo-8.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/photo/partner-logo-9.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/photo/partner-logo-10.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    </main>
+
+    <!-- == FOOTER ================== -->
+    <footer class="footer">
+    <div class="container">
+        <h2 class="footer__title title-2">
+            Якщо залишилися питання - зв'яжіться з нами
+        </h2>
+        <div class="footer__body">
+            <div class="footer__col">
+                <div class="footer__body-item">
+                    <div class="footer__label">Email</div>
+                    <div class="footer__text">
+                        <a href="mailto:team@pe:ocвita.ua">team@pe:ocвita.ua</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__body-item">
+                    <div class="footer__label">Телефон</div>
+                    <div class="footer__text">
+                        <a href="tel:380973492863">+38(097) 349 28 63</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__body-item">
+                    <div class="footer__label">Адреса</div>
+                    <div class="footer__text">
+                        Київ, вул. Дмитрівська 45, офіс 31
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>
+                Політика щодо обробки персональних даних
+            </p>
+            <p>
+                ©2021 РЕ:OCBITA
+            </p>
+        </div>
+    </div>
+</footer>
+    <!-- == // FOOTER ================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+
+</body>
+
+</html>

@@ -99,6 +99,21 @@
         @media (min-width: 992px) {
             display: flex;
         }
+
+        & .text-content {
+            & p {
+                & big big {
+                    font-size: 21px;
+                    line-height: 152%;
+                    color: $titleColor;
+                }
+
+                & big {
+                    font-size: 18px;
+                    line-height: 156%;
+                }
+            }
+        }
     }
 
     &__col-1 {
@@ -328,7 +343,6 @@
     }
 
     &__list {
- 
         flex-wrap: wrap;
         margin: 0 -30px;
 
