@@ -141,3 +141,11 @@ document.addEventListener('keydown', function(e) {
 		}
 	})();
 // === AND Polyfill ===
+
+
+window.showPopup = (id) => {
+	let popup = document.querySelector(id);
+	if(popup) {
+		popupOpen(popup)
+	}
+}

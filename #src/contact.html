@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    @@include('common/header/_header.html',{
+    "white": 'header_light',
+    })
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page contact-page _padding-top">
+        <div class="container">
+            <ul class="breadcrams">
+                <li>
+                    <a href="#">Головна</a>
+                </li>
+                <li>
+                    Зв’язатися з нами
+            </ul>
+        </div>
+
+        <section class="contact pt-0 p-wrap">
+            <div class="container">
+                <h1 class="contact__title title-1 title-color">
+                    Зв’язатися з нами
+                </h1>
+                <div class="contact__head">
+                    <div class="contact__head-item">
+                        <div class="contact__head-item-label">
+                            Адреса
+                        </div>
+                        <div class="contact__head-item-text">
+                            Київ, вул. Дмитрівська 45, офіс 31
+                        </div>
+                    </div>
+                    <div class="contact__head-item">
+                        <div class="contact__head-item-label">
+                            Email
+                        </div>
+                        <div class="contact__head-item-text">
+                            <a href="mailto:">team@pe:ocвita.ua</a>
+                        </div>
+                    </div>
+                    <div class="contact__head-item">
+                        <div class="contact__head-item-label">
+                            Телефон
+                        </div>
+                        <div class="contact__head-item-text">
+                            <a href="tel:">+38(097) 349 28 63</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__map" id="map"
+                data-center-lat="50.45338073956054" data-center-lng="30.48809426811826"
+					data-mark-position-lat="50.45338073956054" data-mark-position-lng="30.48809426811826"></div>
+                <textarea class="textarea mb-40" placeholder="Повідомлення"></textarea>
+
+                <form action="#" class="cta-form">
+                    <h4 class="cta-form__title title-4 title-color">
+                        Форма для зв'язку
+                    </h4>
+                    <div class="cta-form__items">
+                        <div class="cta-form__item">
+                            <input type="text" class="input" placeholder="ім'я">
+                        </div>
+                        <div class="cta-form__item">
+                            <input type="text" class="input _mask" placeholder="Телефон">
+                        </div>
+                        <div class="cta-form__item">
+                            <input type="email" class="input" placeholder="Email">
+                        </div>
+                        <div class="cta-form__item full-width">
+                            <textarea class="textarea" placeholder="Повідомлення"></textarea>
+                        </div>
+                    </div>
+                    <div class="cta-form__bottom">
+                        <button class="btn-default" type="submit">
+                            Відправити
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+    @@include('common/popup/_popup.html',{})
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+    defer></script>
+    @@include('_js-bottom.html',{})
+
+    <script>
+		var isMap = document.getElementById("map");
+		if (isMap) {
+			var map;
+
+			var center = {
+				lat: +isMap.dataset.centerLat,
+				lng: +isMap.dataset.centerLng,
+			}
+
+			var markerPosition = {
+				lat: +isMap.dataset.markPositionLat,
+				lng: +isMap.dataset.markPositionLng,
+			}
+
+			function initMap() {
+
+				map = new google.maps.Map(document.getElementById('map'), {
+					center: { lat: center.lat, lng: center.lng },
+					fullscreenControl: false,
+					zoom: 16,
+					//styles: 
+				});
+
+				var marker = new google.maps.Marker({
+
+					position: { lat: markerPosition.lat, lng: markerPosition.lng },
+
+					map: map,
+
+					title: '',
+					label: '',
+
+					// icon: 'img/contact/googlMarker.svg',
+				});
+
+			}
+		}
+	</script>
+
+</body>
+
+</html>

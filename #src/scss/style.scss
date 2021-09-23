@@ -45,7 +45,7 @@
 // ==== BORDER ===========================================================================================
 
 // ==== POPUP ===========================================================================================
-//@import "common/popup/popup";
+@import "../common/popup/popup";
 // ==== // POPUP ===========================================================================================
 
 * {
@@ -206,6 +206,10 @@ textarea {
 .pt-0 {
 	padding-top: 0 !important;
 }
+.mb-40 {
+    margin-bottom: 40px;
+}
+
 .bg {
 	background: #f3f3f3;
 }
@@ -242,9 +246,19 @@ textarea {
 }
 
 .title-4 {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1.18em;
+
+	@media (max-width: $md4+px) {
+		font-size: 28px;
+	}
 }
 
 .title-5 {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 1.2em;
 }
 .title-6 {
 }
@@ -283,6 +297,7 @@ textarea {
 	align-self: center;
 	position: relative;
 	text-align: center;
+	background-color: transparent;
 
 	@media (min-width: 992px) {
 		&:hover {
@@ -627,7 +642,7 @@ button.btn-default {
 .text-content {
 	font-weight: normal;
 	font-size: 16px;
-	line-height: 175%;
+	line-height: 176%;
 
 	& h1 {
 		font-weight: bold;
@@ -684,6 +699,14 @@ button.btn-default {
 	}
 
 	& figure {
+		display: block;
+		margin-top: 30px;
+		margin-bottom: 16px;
+		& img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
 	}
 }
 // === and TEXT CONTETN BLOCK ========================================================================
@@ -706,5 +729,8 @@ button.btn-default {
 @import "pages/projects";
 @import "pages/about";
 @import "pages/news-page";
+@import "pages/news-detail";
+@import "pages/contact";
+@import "pages/page404";
 
 // ==== AND PAGES =====================================================

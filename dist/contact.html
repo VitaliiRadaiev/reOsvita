@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New Project</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.is-load ._preload-body:before {
+			display: none;
+		}
+		
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    <header class="header header_light">
+    <div class="header__body container">
+        <div class="header__logo-wrap">
+            <div class="header__logo">
+                <a href="#">
+                    <img class="img-svg" src="img/logo/logo.svg" alt="logo">
+                </a>
+            </div>
+        </div>
+        <nav class="header__menu">
+            <ul class="nav">
+                <li>
+                    <a class="nav-link" href="#">
+                        Хто ми
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">
+                        Нашi проєкти
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">
+                        Новини
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">
+                        Зв’язатися з нами
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__language-wrap">
+            <div class="header__language"> <!-- active-lng-2 -->
+                <a href="index.html" class="header__language-item lng-1 active">Укр</a>
+                <div class="header__language-toggle"></div>
+                <a href="index-en.html" class="header__language-item lng-2 ">ENG</a>
+            </div>
+        </div>
+        <div class="header__burger">
+            <div class="burger-wrap">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page contact-page _padding-top">
+        <div class="container">
+            <ul class="breadcrams">
+                <li>
+                    <a href="#">Головна</a>
+                </li>
+                <li>
+                    Зв’язатися з нами
+            </ul>
+        </div>
+
+        <section class="contact pt-0 p-wrap">
+            <div class="container">
+                <h1 class="contact__title title-1 title-color">
+                    Зв’язатися з нами
+                </h1>
+                <div class="contact__head">
+                    <div class="contact__head-item">
+                        <div class="contact__head-item-label">
+                            Адреса
+                        </div>
+                        <div class="contact__head-item-text">
+                            Київ, вул. Дмитрівська 45, офіс 31
+                        </div>
+                    </div>
+                    <div class="contact__head-item">
+                        <div class="contact__head-item-label">
+                            Email
+                        </div>
+                        <div class="contact__head-item-text">
+                            <a href="mailto:">team@pe:ocвita.ua</a>
+                        </div>
+                    </div>
+                    <div class="contact__head-item">
+                        <div class="contact__head-item-label">
+                            Телефон
+                        </div>
+                        <div class="contact__head-item-text">
+                            <a href="tel:">+38(097) 349 28 63</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__map" id="map"
+                data-center-lat="50.45338073956054" data-center-lng="30.48809426811826"
+					data-mark-position-lat="50.45338073956054" data-mark-position-lng="30.48809426811826"></div>
+                <textarea class="textarea mb-40" placeholder="Повідомлення"></textarea>
+
+                <form action="#" class="cta-form">
+                    <h4 class="cta-form__title title-4 title-color">
+                        Форма для зв'язку
+                    </h4>
+                    <div class="cta-form__items">
+                        <div class="cta-form__item">
+                            <input type="text" class="input" placeholder="ім'я">
+                        </div>
+                        <div class="cta-form__item">
+                            <input type="text" class="input _mask" placeholder="Телефон">
+                        </div>
+                        <div class="cta-form__item">
+                            <input type="email" class="input" placeholder="Email">
+                        </div>
+                        <div class="cta-form__item full-width">
+                            <textarea class="textarea" placeholder="Повідомлення"></textarea>
+                        </div>
+                    </div>
+                    <div class="cta-form__bottom">
+                        <button class="btn-default" type="submit">
+                            Відправити
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- == FOOTER ================== -->
+    <footer class="footer">
+    <div class="container">
+        <h2 class="footer__title title-2">
+            Якщо залишилися питання - зв'яжіться з нами
+        </h2>
+        <div class="footer__body">
+            <div class="footer__col">
+                <div class="footer__body-item">
+                    <div class="footer__label">Email</div>
+                    <div class="footer__text">
+                        <a href="mailto:team@pe:ocвita.ua">team@pe:ocвita.ua</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__body-item">
+                    <div class="footer__label">Телефон</div>
+                    <div class="footer__text">
+                        <a href="tel:380973492863">+38(097) 349 28 63</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__body-item">
+                    <div class="footer__label">Адреса</div>
+                    <div class="footer__text">
+                        Київ, вул. Дмитрівська 45, офіс 31
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>
+                Політика щодо обробки персональних даних
+            </p>
+            <p>
+                ©2021 РЕ:OCBITA
+            </p>
+        </div>
+    </div>
+</footer>
+    <!-- == // FOOTER ================== -->
+    
+
+<div class="popup" id="popupMessage">
+	<!-- API
+		use global method - showPopup('#popupMessage');
+ 	-->
+	<div class="popup_body">
+		<div class="popup_content">
+			<h4 class="popup_title title-4 title-color">
+				Спасибі, ваш запит прийнятий
+			</h4>
+			<div class="popup_text text-content">
+				Наш менеджер зв'яжеться з вами найближчим часом, залишайтеся на зв'язку, кожна заявка дорога для нас. Ми поважаємо ваш вибір і інше інше, цей текст можна буде замінити.
+			</div>
+			<button class="btn-default close-popup">
+				закрити
+			</button>
+		</div>
+	</div>
+</div>
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+    defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+
+    <script>
+		var isMap = document.getElementById("map");
+		if (isMap) {
+			var map;
+
+			var center = {
+				lat: +isMap.dataset.centerLat,
+				lng: +isMap.dataset.centerLng,
+			}
+
+			var markerPosition = {
+				lat: +isMap.dataset.markPositionLat,
+				lng: +isMap.dataset.markPositionLng,
+			}
+
+			function initMap() {
+
+				map = new google.maps.Map(document.getElementById('map'), {
+					center: { lat: center.lat, lng: center.lng },
+					fullscreenControl: false,
+					zoom: 16,
+					//styles: 
+				});
+
+				var marker = new google.maps.Marker({
+
+					position: { lat: markerPosition.lat, lng: markerPosition.lng },
+
+					map: map,
+
+					title: '',
+					label: '',
+
+					// icon: 'img/contact/googlMarker.svg',
+				});
+
+			}
+		}
+	</script>
+
+</body>
+
+</html>

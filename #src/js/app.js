@@ -33,7 +33,9 @@ window.addEventListener('load', function () {
 	@@include('../common/partners/partners.js');
 	@@include('../common/gallery/gallery.js');
 	@@include('files/scrollAnimation.js');
-	//@@includ e('../common/popup/popup.js');
+
+	@@include('pages/news-detail.js');
+	@@include('../common/popup/popup.js');
 
 });
 

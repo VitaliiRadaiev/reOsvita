@@ -1,3 +1,5 @@
+@@include('plagins/fancybox.min.js');
+
 $( document ).ready(function() {
     $('img.img-svg').each(function(){
         var $img = $(this);

@@ -63,4 +63,35 @@
             }
         })
     }
+
+    let languageToggle = document.querySelector('.header__language-toggle');
+    let lng1 = document.querySelector('.lng-1');
+    let lng2 = document.querySelector('.lng-2');
+    let start = 0;
+
+    if(lng2.classList.contains('active')) {
+        start = 1;
+    }
+
+    if (languageToggle) {
+        noUiSlider.create(languageToggle, {
+        start: start,
+        step: 1,
+        range: {
+          'min': 0,
+          'max': 1
+        },
+      });
+    }
+
+
+
+    languageToggle.noUiSlider.on('change', function (values, handle) {
+        let value = values[handle];
+        if(value == 0) {
+            document.location = lng1.getAttribute('href');
+        } else {
+            document.location = lng2.getAttribute('href');
+        }
+    }); 
 }

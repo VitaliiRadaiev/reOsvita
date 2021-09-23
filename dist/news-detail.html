@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New Project</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.is-load ._preload-body:before {
+			display: none;
+		}
+		
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    <header class="header header_light">
+    <div class="header__body container">
+        <div class="header__logo-wrap">
+            <div class="header__logo">
+                <a href="#">
+                    <img class="img-svg" src="img/logo/logo.svg" alt="logo">
+                </a>
+            </div>
+        </div>
+        <nav class="header__menu">
+            <ul class="nav">
+                <li>
+                    <a class="nav-link" href="#">
+                        Хто ми
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">
+                        Нашi проєкти
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">
+                        Новини
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">
+                        Зв’язатися з нами
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__language-wrap">
+            <div class="header__language"> <!-- active-lng-2 -->
+                <a href="index.html" class="header__language-item lng-1 active">Укр</a>
+                <div class="header__language-toggle"></div>
+                <a href="index-en.html" class="header__language-item lng-2 ">ENG</a>
+            </div>
+        </div>
+        <div class="header__burger">
+            <div class="burger-wrap">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page news-detail-page _padding-top">
+        <div class="container">
+            <ul class="breadcrams">
+                <li>
+                    <a href="#">Головна</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Новини 
+                     </a>   
+                </li>
+                <li>Дорожня карта реформи НУШ: експерти обговорили розділ Інклюзія в освіті</li>
+            </ul>
+        </div>
+
+        <section class="news-detail pt-0 p-wrap">
+            <div class="container">
+                <div class="news-detail__body">
+                    <div class="news-detail__col-1">
+                        <div class="article">
+                            <div class="article__head">
+                                <h2 class="article__title title-2 title-color">
+                                    Дорожня карта реформи НУШ: експерти обговорили розділ Інклюзія в освіті
+                                </h2>
+                                <div class="news-card__head">
+                                    <div class="news-card__date">
+                                        11 Березня 2021
+                                    </div>
+                                    <div class="label-card">Анонси</div>
+                                </div>
+                            </div>
+                            <div class="article__text text-content">
+                                <p>
+                                    <big>
+                                        Громадська організація «Ре:освіта» провела експертне обговорення розділу «Інклюзія в освіті» Дорожньої карти Нової Української Школи, яке відбулося онлайн 30 квітня 2021 року. У ньому взяли участь Лілія Гриневич, Ганна Новосад, Лариса Шевчук, Олена Мартинчук.
+                                    </big>
+                                </p>
+                                <p>
+                                    Авторки розділу Наталія Софій та Оксана Федоренко представили частину Дорожньої карти, в якій проаналізували стан інклюзивної  освіти в базовій і старшій школі, описали проблеми та пояснили, чому сучасна школа не відповідає вимогам належної інклюзивної освіти. 
+                                </p>
+                                <figure>
+                                    <img src="img/photo/article-img-1.jpg" alt="">
+                                </figure>
+                                <p>
+                                    Лілія Гриневич підкреслила необхідність використання ширшого погляду на інклюзію, а в питанні аналізу ситуації наголосила на доцільності порівняння з 2016 роком. «Оскільки це - Дорожня карта реформи НУШ, яка розпочалась у 2016 році, то необхідно вести відлік і порівнювати зміни саме з відтоді. Адже інклюзивна субвенція, ІРЦ – запроваджені вперше, і необхідно зафіксувати такі результати. Це дозволить продемонструвати значну динаміку, необхідність її підтримки та подальше відслідковування змін», - зауважила Лілія Гриневич. 
+                                </p>
+
+                                <a data-fancybox href="img/videoForTest.mp4" class="video">
+                                    <img src="img/photo/poster.jpg" alt="">
+                                    <div class="video__icon">
+                                        <img src="img/icons/play.svg" alt="">
+                                    </div>
+                                </a>
+                                <p>
+                                    У частині розділу про зростання кількості фахівців інклюзивної освіти в НУШ, на думку експертів, необхідно підняти проблему кадрового забезпечення. Зокрема, Олена Мартинчук зауважила відсутність у класифікаторі професій посади спеціального педагога та  необхідність введення державного замовлення для підготовки таких фахівців. Експерти погодилися, що у документі слід вказати на важливість розробленння професійного стандарту вчителя спеціальної освіти. Крім того, детального висвітлення потребує питання асистента вчителя, його статусу, розмежування обов’язків зі спеціальним педагогом. 
+                                </p>
+                                <p>
+                                    Ганна Новосад підняла питання оцінювання учнів з особливими освітніми потребами, надання відповідних рекомендацій для вирішення цього питання, а також доцільність  моніторингу  впровадження інклюзії загалом. 
+                                </p>
+                                <figure>
+                                    <img src="img/photo/article-img-2.jpg" alt="">
+                                </figure>
+                                <p>
+                                    «Функцію моніторингу могла б виконувати ДСЯО, яка уповноважена здійснення моніторингу якості освіти в цілому. Однак це потребуватиме розроблення певного інструментарію і підготовки»,  - пояснила Ганна Новосад. 
+                                </p>
+                                <p>
+                                    Експерти зауважили, що детальнішого висвітлення потребує проблема інституційних змін в системі інклюзивної освіти. «РЦПІО, які зараз існують як структурні підрозділи ІППО, що проводять тренінги, заняття, не надають якісну допомогу ІРЦ.  Відсутній єдиний підхід до якості, немає зразків комплексних оцінок і кожна область прописує свої методичні поради»,  – зазначила Лариса Шевчук.  У цьому питанні експерти погодилися, що необхідно аргументувати доцільність створення координаційних центрів, конкретизувавши їх кількість, мету. 
+                                </p>
+                                <p>
+                                    Оксана Федоренко підняла питання кореляції між інклюзивною і спеціальною освітою.  «У цьому контексті цікавим є досвід європейських країн. У якості показника оцінки ефективності роботи закладу спеціальної освіти вони використовують коефіцієнт інклюзивності - скільки дітей із такого закладу перейшло на інклюзивне навчання», - розповіла  Оксана Федоренко. 
+                                </p>
+                                <p>
+                                    Серед інших рекомендації, які фахівці надали до розділу -   удосконалення субвенції на інклюзивну освіту, форм індивідуальних програм розвитку, інструемнту комплексних оцінок, які надають ІРЦ.
+                                </p>
+                                <p>
+                                    Обговорення відбувалося в межах проєкту «Підтримка і громадський моніторинг подальшого впровадження реформ у шкільній освіті шляхом розробки та адвокації дорожньої карти Нової Української Школи на рівні базової та профільної середньої освіти (5-12 класи)» за підтримки Міжнародного фонду Відродження
+                                </p>
+                            </div>
+                            <div class="documents-v2">
+                                <h5 class="documents-v2__title title-5 title-color">
+                                    Документи
+                                </h5>
+                                <ul class="documents-v2__list">
+                                    <li>
+                                        <a class="documents-v2__item" href="#">
+                                            <div class="documents-v2__item-icon">
+                                                <img src="img/icons/file.svg" alt="">
+                                            </div>
+                                            <div class="documents-v2__item-text-wrap">
+                                                <p>
+                                                    GPB_СИК rate decison...
+                                                </p>
+                                                <p>
+                                                    PDF (250КБ)
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="documents-v2__item" href="#">
+                                            <div class="documents-v2__item-icon">
+                                                <img src="img/icons/file.svg" alt="">
+                                            </div>
+                                            <div class="documents-v2__item-text-wrap">
+                                                <p>
+                                                    GPB_СИК rate decison...
+                                                </p>
+                                                <p>
+                                                    PDF (250КБ)
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="documents-v2__item" href="#">
+                                            <div class="documents-v2__item-icon">
+                                                <img src="img/icons/file.svg" alt="">
+                                            </div>
+                                            <div class="documents-v2__item-text-wrap">
+                                                <p>
+                                                    GPB_СИК rate decison...
+                                                </p>
+                                                <p>
+                                                    PDF (250КБ)
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="documents-v2__item" href="#">
+                                            <div class="documents-v2__item-icon">
+                                                <img src="img/icons/file.svg" alt="">
+                                            </div>
+                                            <div class="documents-v2__item-text-wrap">
+                                                <p>
+                                                    GPB_СИК rate decison...
+                                                </p>
+                                                <p>
+                                                    PDF (250КБ)
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="social">
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icons/twitter.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icons/linkedin.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icons/facebook.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <section class="similar-posts">
+                                <div class="similar-posts__body">
+                                    <h2 class="similar-posts__title title-2 title-color">
+                                        Схожі новини
+                                    </h2>
+                                    <ul class="similar-posts__list">
+                                        <li>
+                                            <a href="#" class="news-card _anim-items _anim-no-hide">
+                                                <div class="news-card__img ibg">
+                                                    <img src="img/photo/news-card-img-2.jpg" alt="">
+                                                </div>
+                                                <div class="news-card__head">
+                                                    <div class="news-card__date">
+                                                        11 Березня 2021
+                                                    </div>
+                                                    <div class="label-card">Анонси</div>
+                                                </div>
+                                                <div class="news-card__title">
+                                                    Учителів не можна оцінювати за новим профстандартом, поки вони не отримають час і можливості для відповідної підготовки – інтерв’ю з Лілією Гриневич
+                                                </div>
+                                                <div class="news-card__arrow">
+                                                    <img src="img/icons/arrow-right.svg" alt="">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="news-card _anim-items _anim-no-hide">
+                                                <div class="news-card__img ibg">
+                                                    <img src="img/photo/news-card-img-3.jpg" alt="">
+                                                </div>
+                                                <div class="news-card__head">
+                                                    <div class="news-card__date">
+                                                        11 Березня 2021
+                                                    </div>
+                                                    <div class="label-card">Анонси</div>
+                                                </div>
+                                                <div class="news-card__title">
+                                                    Професійний стандарт вчителя – міжнародний досвід
+                                                </div>
+                                                <div class="news-card__arrow">
+                                                    <img src="img/icons/arrow-right.svg" alt="">
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <form action="#" class="cta-form">
+                                <h2 class="cta-form__title title-4 title-color">
+                                    Форма для зв'язку
+                                </h2>
+                                <div class="cta-form__items">
+                                    <div class="cta-form__item hulf-width">
+                                        <input type="text" class="input" placeholder="ім'я">
+                                    </div>
+                                    <div class="cta-form__item hulf-width">
+                                        <input type="text" class="input _mask" placeholder="Телефон">
+                                    </div>
+                                    <div class="cta-form__item full-width">
+                                        <input type="email" class="input" placeholder="Email">
+                                    </div>
+                                    <div class="cta-form__item full-width">
+                                        <textarea class="textarea" placeholder="Повідомлення"></textarea>
+                                    </div>
+                                </div>
+                                <div class="cta-form__bottom">
+                                    <button class="btn-default" type="submit">
+                                        Відправити
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="news-detail__col-2">
+                        <ul class="category-list">
+                            <li>
+                                <a class="active" href="#">
+                                    Новини
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Головні новини
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Акції
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Новини спецпроектів
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Iнфографіка
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Корпоративні видання
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Контакти для ЗМІ                               
+                                 </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- == FOOTER ================== -->
+    <footer class="footer">
+    <div class="container">
+        <h2 class="footer__title title-2">
+            Якщо залишилися питання - зв'яжіться з нами
+        </h2>
+        <div class="footer__body">
+            <div class="footer__col">
+                <div class="footer__body-item">
+                    <div class="footer__label">Email</div>
+                    <div class="footer__text">
+                        <a href="mailto:team@pe:ocвita.ua">team@pe:ocвita.ua</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__body-item">
+                    <div class="footer__label">Телефон</div>
+                    <div class="footer__text">
+                        <a href="tel:380973492863">+38(097) 349 28 63</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__body-item">
+                    <div class="footer__label">Адреса</div>
+                    <div class="footer__text">
+                        Київ, вул. Дмитрівська 45, офіс 31
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>
+                Політика щодо обробки персональних даних
+            </p>
+            <p>
+                ©2021 РЕ:OCBITA
+            </p>
+        </div>
+    </div>
+</footer>
+    <!-- == // FOOTER ================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+
+</body>
+
+</html>

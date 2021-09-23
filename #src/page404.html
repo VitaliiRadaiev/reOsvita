@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    @@include('common/header/_header.html',{
+    "white": 'header_light',
+    })
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page page-404 _padding-top">
+       <section class="block-404">
+           <div class="block-404__bg">
+            <div class="block-404__bg-left">
+                <img src="img/photo/404-decor-1.svg" alt="">
+            </div>
+            <div class="block-404__bg-right">
+                <img src="img/photo/404-decor-2.svg" alt="">
+            </div>
+           </div>
+           <div class="block-404__body container">
+                <h1 class="block-404__title title-color">404</h1>
+                <h4 class="block-404__subtitle title-color title-4">
+                    Сторінку не знайдено
+                </h4>
+                <div class="block-404__text text-content">
+                    На жаль, такої сторінки не існує. Ймовірно, вона була видалена автором сервера, або її тут ніколи не було. Почніть все з початку перейшовши на головну сторінку.
+                </div>
+                <a href="#" class="btn-default">На головну</a>
+           </div>
+       </section>
+
+    </main>
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+
+    @@include('_js-bottom.html',{})
+
+</body>
+
+</html>
